@@ -103,6 +103,6 @@ Devise.add_module :paranoid_verification, controller: :paranoid_verification_cod
 require 'devise_security_extension/routes'
 require 'devise_security_extension/rails'
 require 'devise_security_extension/orm/active_record' if defined?(ActiveRecord)
-require 'devise_security_extension/models/#{orm}/old_password'
+require "devise_security_extension/models/#{orm}/old_password"
 require 'devise_security_extension/models/database_authenticatable_patch'
 require 'devise_security_extension/models/paranoid_verification'
